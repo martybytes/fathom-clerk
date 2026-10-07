@@ -1,0 +1,7 @@
+# Runtime dependencies for the terminal dashboard (`fath ui`) and the tests.
+#
+# The core -- sync, naming, the API client, the web server -- is stdlib only and
+# stays that way, so a scheduled sync never depends on any of this. Textual is
+# needed for one optional command; `fath ui` says so plainly if it is absent
+# rather than failing on an import.
+textual>=0.80

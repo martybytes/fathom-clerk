@@ -1,0 +1,122 @@
+/* Catppuccin Mocha, matching terminal-stack's dashboard so the two tools do not
+   look like they came from different places. */
+
+Screen {
+    background: #1e1e2e;
+    color: #cdd6f4;
+}
+
+Header {
+    background: #181825;
+    color: #cba6f7;
+}
+
+Footer {
+    background: #181825;
+}
+
+TabbedContent {
+    height: 1fr;
+}
+
+.panel {
+    border: round #313244;
+    padding: 1 2;
+    margin: 1 1;
+}
+
+.panel-title {
+    color: #cba6f7;
+    text-style: bold;
+}
+
+.stat-label {
+    color: #a6adc8;
+}
+
+.ok {
+    color: #a6e3a1;
+}
+
+.warn {
+    color: #f9e2af;
+}
+
+.bad {
+    color: #f38ba8;
+}
+
+.muted {
+    color: #6c7086;
+}
+
+.accent {
+    color: #89b4fa;
+}
+
+#log {
+    border: round #313244;
+    height: 1fr;
+    margin: 0 1;
+}
+
+DataTable {
+    height: 1fr;
+    margin: 0 1;
+}
+
+DataTable > .datatable--header {
+    background: #313244;
+    color: #cba6f7;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #45475a;
+}
+
+Input {
+    border: tall #313244;
+    background: #181825;
+}
+
+Input:focus {
+    border: tall #89b4fa;
+}
+
+Button {
+    margin: 0 1;
+}
+
+Button.-primary {
+    background: #89b4fa;
+    color: #1e1e2e;
+}
+
+#preview {
+    border: round #313244;
+    height: 1fr;
+    margin: 0 1;
+    padding: 1 2;
+}
+
+.setting-row {
+    height: auto;
+    padding: 0 0 1 0;
+}
+
+.setting-note {
+    color: #6c7086;
+}
+
+.source-config {
+    color: #f9e2af;
+}
+
+.source-local {
+    color: #fab387;
+}
+
+.source-default {
+    color: #6c7086;
+}
