@@ -105,5 +105,5 @@ Set-Content -LiteralPath $target -Value $updated -Encoding UTF8 -NoNewline
 if ($Uninstall) {
     Write-Host 'removed. Open a new PowerShell session.' -ForegroundColor Green
 } else {
-    Write-Host 'installed. Open a new PowerShell session, then run: fath doctor' -ForegroundColor Green
+    Write-Host 'installed. Run `. $PROFILE` (or open a new session), then: fath doctor' -ForegroundColor Green
 }
