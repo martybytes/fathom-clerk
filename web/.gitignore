@@ -1,0 +1,4 @@
+node_modules/
+# dist/ is deliberately NOT ignored: the built bundle is committed so `fath web`
+# needs no node, no npm install and no network. See docs/decisions.md.
+*.tsbuildinfo

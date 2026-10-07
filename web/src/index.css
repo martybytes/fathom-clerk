@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* No icon font at all. The icons are inlined as SVG paths by
+   scripts/build-icons.mjs -- 10 kB for the set this app uses, against 3.8 MB
+   for the full webfont, which matters because the built bundle is committed. */
+
+/* Catppuccin Mocha, matching the terminal dashboard and terminal-stack, so the
+   two tools do not look like they came from different places. */
+@theme {
+  --color-base: #1e1e2e;
+  --color-mantle: #181825;
+  --color-crust: #11111b;
+  --color-surface0: #313244;
+  --color-surface1: #45475a;
+  --color-overlay: #6c7086;
+  --color-subtext: #a6adc8;
+  --color-text: #cdd6f4;
+  --color-green: #a6e3a1;
+  --color-yellow: #f9e2af;
+  --color-red: #f38ba8;
+  --color-peach: #fab387;
+  --color-blue: #89b4fa;
+  --color-mauve: #cba6f7;
+  --color-teal: #94e2d5;
+
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+html[data-theme="light"] {
+  --color-base: #eff1f5;
+  --color-mantle: #e6e9ef;
+  --color-crust: #dce0e8;
+  --color-surface0: #ccd0da;
+  --color-surface1: #bcc0cc;
+  --color-overlay: #7c7f93;
+  --color-subtext: #5c5f77;
+  --color-text: #4c4f69;
+  --color-green: #40a02b;
+  --color-yellow: #df8e1d;
+  --color-red: #d20f39;
+  --color-peach: #fe640b;
+  --color-blue: #1e66f5;
+  --color-mauve: #8839ef;
+  --color-teal: #179299;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-mantle);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface0);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface1);
+}

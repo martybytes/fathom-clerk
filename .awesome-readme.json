@@ -1,0 +1,5 @@
+{
+  "profile": "cli",
+  "disable": ["HERO003"],
+  "_why": "HERO003: no CI workflow and no published package version, so no badge has live data behind it."
+}

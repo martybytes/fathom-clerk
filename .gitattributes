@@ -1,0 +1,6 @@
+# CRLF drift is the bug this prevents. Without it, a file written on Windows and
+# read in WSL differs by line ending alone, and every diff becomes noise.
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.woff2 binary
