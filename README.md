@@ -110,9 +110,21 @@ Runs from the clone; nothing is installed or published.
 <details open>
 <summary><b>Windows</b> (PowerShell)</summary>
 
+From the clone, with no setup at all:
+
 ```powershell
-pip install -r requirements.txt               # optional: only for fath ui
+.\fath                                        # opens the dashboard
+```
+
+`fath.cmd` sits next to this README. With no arguments it runs `fath web`; with
+arguments it is `fath` itself (`.\fath doctor`, `.\fath sync`).
+
+To type a bare `fath` from anywhere, with tab completion:
+
+```powershell
 .\scripts\install-shim.ps1                    # into your own $PROFILE
+. $PROFILE                                    # or open a new session
+pip install -r requirements.txt               # optional: only for fath ui
 ```
 
 </details>

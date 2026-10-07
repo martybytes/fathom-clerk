@@ -8,6 +8,9 @@
 - Hero banner on the dashboard overview and in the README.
 - Illustrated empty states for the meeting list (no meetings yet) and the idle
   sync log. `Empty` takes an optional decorative `image`.
+- `fath.cmd` in the clone root, so `.\fath <command>` runs with no shim
+  installed. With no arguments it opens the dashboard. Same Python resolution
+  as the shim.
 
 ## [0.1.0] - 2026-10-07
 

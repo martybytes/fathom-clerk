@@ -155,6 +155,14 @@ marker block that dot-sources it. The launcher ships with the tool it launches,
 and a fix arrives with `git pull` rather than a profile rewrite. The installer
 targets `$PROFILE` by default, or any file passed as `-ProfilePath`.
 
+`fath.cmd` in the clone root runs the same entry point with no install step, so
+a fresh clone works before anyone finds the installer. With no arguments it
+opens the dashboard rather than printing help: it is the front door, and the
+dashboard is what someone typing a bare command wants. Making `fath` itself
+default to `web` was rejected; the shim's bare `fath` and scripted callers keep
+the conventional help. Adding the clone to `PATH` was rejected for the reason
+`main.py` avoids `PYTHONPATH`: a session-wide change for a one-shot need.
+
 ## Examples, credentials, and local data
 
 Public examples use invented identities and meeting details. Keep punctuation,
